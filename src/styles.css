@@ -1,8 +1,13 @@
 html, body {
-  height: 100%;
   margin: 0;
   padding: 0;
-  background-size: cover;
-  background-color: rgb(121, 26, 26);
+  background: linear-gradient(135deg, rgb(121, 26, 26), #1d0101);
+  background-size: 400% 400%;
+  animation: movimientoFondo 10s ease-in-out infinite alternate;
   font-family: "Work Sans", sans-serif;
+}
+
+@keyframes movimientoFondo {
+  0% { background-position: 0% 0%; }
+  100% { background-position: 100% 100%; }
 }
